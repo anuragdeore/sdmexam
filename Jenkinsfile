@@ -1,6 +1,9 @@
 
 pipeline {
   agent any
+  environment {
+    NEW_VERSION = '1.3.0'
+  }
     stages {
       stage("build"){
         when
@@ -11,6 +14,7 @@ pipeline {
         }
         steps{
           echo "building the applications. .."
+          echo "vuilding version ${NEW_VERSION}"
         }
       }
       stage("test"){
