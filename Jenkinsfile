@@ -29,6 +29,7 @@ pipeline {
           echo "deploying the applications "
         }
       }
+    }
       post {
         always {
         }
@@ -36,5 +37,5 @@ pipeline {
         }
       }
       
-    }
+    
 }
