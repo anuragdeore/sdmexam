@@ -6,7 +6,7 @@ pipeline {
     SERVER_CREDENTIALS = credentials('server-credentials')
   }
  
-  }
+  
     stages {
       stage("build"){
         when
