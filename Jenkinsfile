@@ -5,8 +5,7 @@ pipeline {
     NEW_VERSION = '1.3.0'
     SERVER_CREDENTIALS = credentials('server-credentials')
   }
-  tools {
-    maven 'Maven'
+ 
   }
     stages {
       stage("build"){
@@ -19,7 +18,7 @@ pipeline {
         steps{
           echo "building the applications. .."
           echo "Building version ${NEW_VERSION}"
-          sh "mvn install"
+          
         }
       }
       stage("test"){
